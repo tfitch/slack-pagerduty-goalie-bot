@@ -9,6 +9,17 @@ This will vary depending on the method you use to run this script.
 
 The `SLACK_TOKEN` value here is what Slack calls a Legacy Token and for me runs as a user, not a bot. This is because the APIs I'm trying to use - setting Channel topic and managing a User Group called "Goalie" are API calls a bot *cannot* make but a user can.  Slack is working to address this gap with Workspace Tokens, but Workspaces Tokens do not (as of Feb 2018) work with Enterprise Grid accounts and that is what I use at work.
 
+## Running the app
+
+Since this is a Node.js application first and foremost, ensure you have `node` installed and in your `$PATH`.
+
+* Checkout this repo
+* `cd slack-pagerduty-goalie-bot`
+* `npm install` to download all the libraries used by this app
+* `npm start` it will run and update the Topic in the Slack room
+* Done
+* Run `npm start` again in the future when your On Call Engineer has changed.
+
 ## TODO: Automating the running on this bot
 * Manage a Slack user group alias called "Goalie" so users on your team can ask for help by asking `@goalie` a question.
 * I am expecting to run this as a Lambda function, but it could also just be a Jenkins job. It could change significantly depending on the requirements to run in those environments.  So far this just works in my terminal.

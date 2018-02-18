@@ -1,0 +1,27 @@
+{
+  "name": "slack-pagerduty-goalie-bot",
+  "version": "0.1.0",
+  "description": "A Slack bot written in Node.js that will report who is currently on-call in PagerDuty.",
+  "main": "index.js",
+  "author": "Tyler Fitch",
+  "repository": {
+    "type": "git",
+    "ur": "https://github.com/tfitch/slack-pagerduty-goalie-bot"
+  },
+  "license": "MIT",
+  "keywords": [
+    "Slack",
+    "PagerDuty",
+    "Goalie"
+  ],
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\""
+  },
+  "dependencies": {
+    "json-query": "^2.2.2",
+    "node-env-file": "^0.1.8",
+    "node-pagerduty": "^1.0.1",
+    "slack": "^9.0.9"
+  }
+}

@@ -61,3 +61,10 @@ myOnCalls.then(function(result) {
   })
   
 })
+
+
+// Lambda "main": Execution begins here
+exports.handler = function(event, context) {
+  // but everything already happened above so...  
+  return true;
+}

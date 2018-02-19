@@ -57,3 +57,5 @@ typings/
 # dotenv environment variables file
 .env
 
+# the Lambda version is packaged as a .zip
+*.zip
